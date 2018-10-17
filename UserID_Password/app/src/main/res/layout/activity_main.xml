@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBEEE6"
+    tools:context=".MainActivity">
+
+<!--text view for the first name-->
+    <TextView
+        android:id="@+id/labelFname"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="First Name"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:background="#ABEBC6"
+        />
+
+<!--to enter the first name of the user-->
+    <EditText
+        android:id="@+id/inputFname"
+        android:layout_toRightOf="@id/labelFname"
+        android:layout_alignBottom="@+id/labelFname"
+        android:padding="10dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="John"
+        android:maxLength="10"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:background="#F9E79F"
+        />
+
+<!--textview field for the last name-->
+    <TextView
+        android:id="@+id/labelLname"
+        android:layout_below="@id/labelFname"
+        android:layout_alignLeft="@id/labelFname"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:background="#ABEBC6"
+        />
+
+<!--to enter the last name of the user-->
+    <EditText
+        android:id="@+id/inputLname"
+        android:layout_toRightOf="@id/labelLname"
+        android:layout_alignBottom="@id/labelLname"
+        android:padding="10dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Maxwell"
+        android:maxLength="10"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:background="#F9E79F"
+        />
+        
+<!--textview field for the DOB-->
+    <TextView
+        android:id="@+id/labelDOB"
+        android:layout_below="@+id/labelLname"
+        android:layout_alignLeft="@+id/labelLname"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:background="#ABEBC6"
+        />
+
+<!--to enter the dob of the user-->
+    <EditText
+        android:id="@+id/inputBirthDate"
+        android:layout_toRightOf="@id/labelDOB"
+        android:layout_alignBottom="@+id/labelDOB"
+        android:padding="10dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:hint="MM/DD/YYYY"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:background="#F9E79F"
+        />
+
+    <View
+        android:id="@+id/line"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/labelDOB"
+        android:layout_width="400dp"
+        android:layout_height="5dp"
+        android:background="#009900"/>
+
+    <TextView
+        android:id="@+id/labelUid"
+        android:layout_below="@id/line"
+        android:layout_alignLeft="@id/labelDOB"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:text="User Id"
+        android:textColor="@color/textColor"
+        android:background="#ABEBC6"
+        android:textSize="@dimen/textSize"
+        />
+
+<!--displays the userid-->
+   <TextView
+        android:id="@+id/outputUid"
+        android:layout_toRightOf="@id/labelUid"
+        android:layout_alignBottom="@id/labelUid"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:background="#F9E79F"
+        />
+
+    <TextView
+        android:id="@+id/labelPassword"
+        android:layout_below="@id/labelUid"
+        android:layout_alignLeft="@id/labelUid"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="@dimen/textSize"
+        android:background="#ABEBC6"
+        android:textColor="@color/textColor"
+        />
+
+<!--displays the password-->
+    <TextView
+        android:id="@+id/outputPassword"
+        android:layout_toRightOf="@id/labelPassword"
+        android:layout_alignBottom="@id/labelPassword"
+        android:padding="10dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:background="#F9E79F"
+        />
+
+    <Button
+        android:id="@+id/btnGenerate"
+        android:layout_below="@id/labelPassword"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GENERATE"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:onClick="generate"
+        />
+
+
+</RelativeLayout>

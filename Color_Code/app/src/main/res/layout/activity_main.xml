@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--a color window-->
+    <TextView
+        android:id="@+id/labelColor"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="#000000"
+        />
+
+<!--for red value-->
+    <EditText
+        android:id="@+id/inputRed"
+        android:layout_below="@id/labelColor"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="50dp"
+        android:padding="10dp"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:hint="0"
+        android:gravity="center"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:background="#990000"
+        />
+        
+<!--for green value-->
+    <EditText
+        android:id="@+id/inputGreen"
+        android:layout_alignBottom="@id/inputRed"
+        android:layout_toRightOf="@id/inputRed"
+        android:layout_marginLeft="50dp"
+        android:padding="10dp"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:hint="0"
+        android:gravity="center"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:background="#009900"
+        />
+        
+<!--for blue value-->
+    <EditText
+        android:id="@+id/inputBlue"
+        android:layout_alignBottom="@id/inputGreen"
+        android:layout_toRightOf="@id/inputGreen"
+        android:layout_marginLeft="50dp"
+        android:padding="10dp"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:hint="0"
+        android:gravity="center"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:background="#000099"
+        />
+
+</RelativeLayout>

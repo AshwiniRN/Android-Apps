@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9F9"
+    tools:context=".MainActivity">
+
+<!--An edittext field to enter value 1-->
+    <EditText
+        android:id="@+id/labelOperand1"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="60dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:background="#48C9B0  "
+        android:gravity="center"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/text_size"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="Value 1"
+        />
+
+<!--An edittext field to enter value 2-->
+    <EditText
+        android:id="@+id/labelOperand2"
+        android:layout_toRightOf="@id/labelOperand1"
+        android:layout_alignBottom="@id/labelOperand1"
+        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:background="#48C9B0  "
+        android:gravity="center"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/text_size"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="Value 2"
+        />
+
+<!--A button to perform addition -->
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelOperand1"
+        android:layout_alignLeft="@id/labelOperand1"
+        android:padding="10dp"
+        android:background="#5DADE2"
+        android:textColor="@color/textColor"
+        android:text="+"
+        android:textSize="@dimen/text_size"
+        android:onClick="add"
+        />
+
+<!--A button to perform subtraction -->
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@id/btnAdd"
+        android:layout_alignBottom="@id/btnAdd"
+        android:padding="10dp"
+        android:background="#5DADE2"
+        android:textColor="@color/textColor"
+        android:text="-"
+        android:textSize="@dimen/text_size"
+        android:onClick="subtract"
+        />
+
+<!--A button to perform multiplication -->
+    <Button
+        android:id="@+id/btnMul"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@id/btnSub"
+        android:layout_alignBottom="@id/btnAdd"
+        android:padding="10dp"
+        android:background="#5DADE2"
+        android:textColor="@color/textColor"
+        android:text="*"
+        android:textSize="@dimen/text_size"
+        android:onClick="multiply"
+        />
+
+<!--A button to perform division -->
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@id/btnMul"
+        android:layout_alignBottom="@id/btnAdd"
+        android:padding="10dp"
+        android:background="#5DADE2"
+        android:textColor="@color/textColor"
+        android:text="/"
+        android:textSize="@dimen/text_size"
+        android:onClick="divide"
+        />
+
+<!--An output textview field -->
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btnAdd"
+        android:layout_alignLeft="@id/btnSub"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="#76D7C4"
+        android:text="Result"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/textColor"
+        />
+</RelativeLayout>

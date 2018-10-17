@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6DBDF"
+    tools:context=".MainActivity">
+
+<!--edidtext field to take the number input-->
+    <EditText
+        android:id="@+id/inputPrime"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter a number"
+        android:gravity="center"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+
+<!--button run-->
+    <Button
+        android:id="@+id/btnRun"
+        android:layout_below="@id/inputPrime"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#17A589"
+        android:text="RUN"
+        android:textSize="@dimen/textSize"
+        android:onClick="run"
+        />
+
+<!--scrollview to diplay the prime numbers-->
+    <ScrollView
+        android:layout_below="@id/btnRun"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/outputFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="@dimen/textSize"
+            android:textColor="@color/textColor"
+            />
+
+    </ScrollView>
+</RelativeLayout>

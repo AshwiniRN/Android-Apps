@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9E79F"
+    tools:context=".MainActivity">
+
+<!--textview field to diaplay the question-->
+    <TextView
+        android:id="@+id/question"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:text=""
+        android:gravity="left"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+
+<!--radio group to display the options for the question-->
+    <RadioGroup
+        android:id="@+id/radioAnswers"
+        android:layout_below="@+id/question"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:textSize="@dimen/textSize"
+        >
+
+        <RadioButton
+            android:id="@+id/option1"
+            android:layout_below="@+id/question"
+            android:layout_marginTop="15dp"
+            android:duplicateParentState="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize"
+            android:text="RadioButton"
+            android:textColor="@color/textColor"
+            />
+
+        <RadioButton
+            android:id="@+id/option2"
+            android:layout_below="@+id/option1"
+            android:layout_alignLeft="@+id/option1"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton"
+            android:textSize="@dimen/textSize"
+            android:textColor="@color/textColor"
+            />
+
+        <RadioButton
+            android:id="@+id/option3"
+            android:layout_below="@+id/option2"
+            android:layout_alignLeft="@+id/option2"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton"
+            android:textSize="@dimen/textSize"
+            android:textColor="@color/textColor"
+            />
+
+        <RadioButton
+            android:id="@+id/option4"
+            android:layout_below="@+id/option3"
+            android:layout_alignLeft="@+id/option3"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton"
+            android:textSize="@dimen/textSize"
+            android:textColor="@color/textColor"
+            />
+
+    </RadioGroup>
+
+
+<!--button to submit the answer-->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_below="@+id/radioAnswers"
+        android:layout_alignLeft="@+id/btnNext"
+        android:layout_marginTop="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:gravity="center"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+
+<!--textview field to diaplay if the answer is correct or incorrect-->
+    <TextView
+        android:id="@+id/status"
+        android:layout_below="@+id/btnSubmit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="Result"
+        android:gravity="center"
+        android:textSize="25dp"
+        />
+
+<!--textView for score-->
+    <TextView
+        android:id="@+id/score"
+        android:layout_below="@+id/status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="Score"
+        android:textColor="@color/textColor"
+        android:gravity="center"
+        android:textSize="@dimen/textSize"
+        />
+
+<!--button for next question-->
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_below="@+id/score"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+
+</RelativeLayout>

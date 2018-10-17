@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6DDCC"
+    tools:context=".MainActivity">
+
+<!-- textview field for principal -->
+    <TextView
+        android:id="@+id/labelPrincipal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Current Principal"
+        android:background="#76D7C4"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+
+<!--edittext field to enter the value-->
+    <EditText
+        android:id="@+id/inputPrincipal"
+        android:layout_toRightOf="@id/labelPrincipal"
+        android:layout_alignBottom="@id/labelPrincipal"
+        android:padding="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="0"
+        android:gravity="center"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:background="#F7DC6F"
+        />
+
+<!-- textview field for AnnualAddition -->
+    <TextView
+        android:id="@+id/labelAnnualAddition"
+        android:layout_below="@id/labelPrincipal"
+        android:layout_alignLeft="@id/labelPrincipal"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Annual Addition"
+        android:background="#76D7C4"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+
+<!-- edittext field to enter the Annual Addition-->
+    <EditText
+        android:id="@+id/inputAnnualAddition"
+        android:layout_toRightOf="@id/labelAnnualAddition"
+        android:layout_alignBottom="@id/labelAnnualAddition"
+        android:padding="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="0"
+        android:background="#F7DC6F"
+        android:gravity="center"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+
+<!-- textview field for years -->
+    <TextView
+        android:id="@+id/labelYears"
+        android:layout_below="@id/labelAnnualAddition"
+        android:layout_alignLeft="@id/labelAnnualAddition"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Number of years"
+        android:background="#76D7C4"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+        
+<!--edittext field to enter the Number of years-->
+    <EditText
+        android:id="@+id/inputYears"
+        android:layout_toRightOf="@id/labelYears"
+        android:layout_alignBottom="@id/labelYears"
+        android:padding="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="0"
+        android:textSize="@dimen/textSize"
+        android:background="#F7DC6F"
+        android:gravity="center"
+        android:textColor="@color/textColor"
+        />
+        
+<!-- textview field for return rate -->
+    <TextView
+        android:id="@+id/labelReturnRate"
+        android:layout_below="@id/labelYears"
+        android:layout_alignLeft="@id/labelYears"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Rate of return"
+        android:background="#76D7C4"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+
+<!--edittext field to enter the return rate-->
+    <EditText
+        android:id="@+id/inputReturnRate"
+        android:layout_toRightOf="@id/labelReturnRate"
+        android:layout_alignBottom="@id/labelReturnRate"
+        android:padding="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="0.0"
+        android:gravity="center"
+        android:background="#F7DC6F"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        />
+
+<!-- textview field for final amount  label-->
+    <TextView
+        android:id="@+id/labelFinalAmount"
+        android:layout_below="@id/labelReturnRate"
+        android:layout_alignLeft="@id/labelReturnRate"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Future Amount"
+        android:background="#76D7C4"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+
+<!-- textview field for final amount -->
+    <TextView
+        android:id="@+id/outputFinalAmount"
+        android:layout_toRightOf="@id/labelFinalAmount"
+        android:layout_alignBottom="@id/labelFinalAmount"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="150dp"
+        android:inputType="number"
+        android:text="0"
+        android:background="#F7DC6F"
+        android:gravity="center"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+
+<!--butten to calucalte the compond interest-->
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_below="@id/labelFinalAmount"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="CALCULATE"
+        android:textColor="@color/textColor"
+        android:onClick="calculate"
+        />
+
+</RelativeLayout>
