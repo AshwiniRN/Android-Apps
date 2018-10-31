@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D4E6F1"
+    tools:context=".MainActivity">
+
+    <!--a EditText to input real numbers-->
+    <EditText
+        android:id="@+id/input"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:background="#F9E79F"
+        android:inputType="text"
+        android:gravity="center"
+        android:hint="Enter the numbers"
+        />
+
+    <RelativeLayout
+        android:id="@+id/one"
+        android:layout_below="@+id/input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!--the GridLayout is nested within the Relative Layout to display 6 buttons-->
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="3"
+            android:columnCount="2">
+
+            <Button
+                android:id="@+id/sum"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize"
+                android:text="Sum"
+                />
+
+            <Button
+                android:id="@+id/mean"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize"
+                android:text="Mean"
+                />
+
+            <Button
+                android:id="@+id/median"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize"
+                android:text="Median"
+                />
+
+            <Button
+                android:id="@+id/stdDeviation"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize"
+                android:text="Std Dev"
+                />
+
+            <Button
+                android:id="@+id/min"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize"
+                android:text="Min"
+                />
+
+            <Button
+                android:id="@+id/max"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize"
+                android:text="Max"
+                />
+        </GridLayout>
+
+
+    </RelativeLayout>
+
+    <!-- Textview to display the results-->
+    <TextView
+        android:id="@+id/output"
+        android:layout_below="@+id/one"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Result"
+        android:text=""
+        android:background="#F9E79F"
+        />
+
+</RelativeLayout>

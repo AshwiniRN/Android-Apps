@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!--This table row has a TextView and EditText for Assignment Score-->
+    <TableRow>
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:padding="10dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#76D7C4"
+            android:text="Assignment Score"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize"
+            />
+
+        <EditText
+            android:id="@+id/inputAssignment"
+            android:layout_marginTop="50dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F9E79F"
+            android:inputType="numberDecimal"
+            android:hint="0"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize"
+            />
+    </TableRow>
+
+    <!--This table row has a TextView and EditText for MidTerm Score-->
+    <TableRow>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#76D7C4"
+            android:text="Mid Term Score"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize"
+            />
+
+        <EditText
+            android:id="@+id/inputMidTerm"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F9E79F"
+            android:inputType="numberDecimal"
+            android:hint="0"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize"
+            />
+    </TableRow>
+
+    <!--This table row has a TextView and EditText for FinalExam Score-->
+    <TableRow>
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#76D7C4"
+            android:text="Final Exam Score"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize"
+            />
+
+        <EditText
+            android:id="@+id/inputFinalExam"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F9E79F"
+            android:inputType="numberDecimal"
+            android:hint="0"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize"
+            />
+    </TableRow>
+
+    <!--This table row has two TextViews for Final Scores-->
+    <TableRow>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#76D7C4"
+            android:text="Final Course Score"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize"
+            />
+
+        <TextView
+            android:id="@+id/outputFinalScore"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F9E79F"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize"
+            />
+    </TableRow>
+
+    <!--This table row has two TextView's for Final Grade-->
+    <TableRow>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#76D7C4"
+            android:text="Final Letter Grade"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize"
+            />
+
+        <TextView
+            android:id="@+id/outputLetterGrade"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="#F9E79F"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize"
+            />
+    </TableRow>
+
+    <!--Button to calculate final score and the final grade -->
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:text="CALCULATE"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        />
+
+</TableLayout>
+

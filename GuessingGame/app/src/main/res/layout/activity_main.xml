@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7DC6F"
+    tools:context=".MainActivity">
+
+    <!--TextView to display range-->
+    <TextView
+        android:id="@+id/labelRange"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:layout_height="50dp"
+        android:text="Guess the number (1-100)"
+        android:gravity="center"
+        />
+
+    <!--TextView to display number of guesses left-->
+    <TextView
+        android:id="@+id/remGuess"
+        android:layout_below="@+id/labelRange"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="You have 8 chances"
+        android:gravity="center"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+
+    <!--TextView to display resulting message-->
+    <TextView
+        android:id="@+id/result"
+        android:layout_below="@+id/remGuess"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:layout_height="50dp"
+        android:text="Waiting for response"
+        android:gravity="center"
+        />
+
+    <!--EditText for the user to enter their guess-->
+    <EditText
+        android:id="@+id/inputGuess"
+        android:layout_below="@+id/result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:inputType="number"
+        android:hint="0"
+        android:gravity="center"
+        />
+
+    <!--Button to submit-->
+    <Button
+        android:id="@+id/submit"
+        android:layout_below="@+id/inputGuess"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="100dp"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:layout_height="50dp"
+        android:text="submit"
+        />
+
+
+</RelativeLayout>
