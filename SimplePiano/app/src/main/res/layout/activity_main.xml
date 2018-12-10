@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:background="#AED6F1"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:weightSum="8">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:text="Sa"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:text="Re"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:text="Ga"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:text="Ma"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:text="Pa"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:text="Da"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:text="Ni"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:text="Sa"
+            android:layout_weight="1"
+            />
+
+
+  </LinearLayout>
+
+</RelativeLayout>

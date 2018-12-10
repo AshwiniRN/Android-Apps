@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7BDE2"
+    tools:context=".ThirdActivity">
+
+    <!--TextView showing title Feet to Meter-->
+    <TextView
+        android:id="@+id/feetLabel"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="40dp"
+        android:gravity="center"
+        android:text="Feet to Meter"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:layout_width="310dp"
+        android:layout_height= "50dp"/>
+
+    <!--EditText to input feet-->
+    <EditText
+        android:id="@+id/feet"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feetLabel"
+        android:layout_alignLeft="@+id/feetLabel"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:inputType="numberDecimal|numberSigned"
+        android:text=""
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize" />
+
+
+    <EditText
+        android:id="@+id/feetOutput"
+        android:layout_toRightOf="@+id/feet"
+        android:layout_alignBottom="@+id/feet"
+        android:gravity="center"
+        android:text=""
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+
+    <!--TextView showing title Meter to Feet-->
+    <TextView
+        android:id="@+id/meterLabel"
+        android:layout_below="@+id/feet"
+        android:layout_alignLeft="@+id/feetLabel"
+        android:gravity="center"
+        android:text="Meter to Feet"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <!--EditText to input Meter-->
+    <EditText
+        android:id="@+id/meter"
+        android:layout_below="@+id/meterLabel"
+        android:layout_alignLeft="@+id/meterLabel"
+        android:inputType="numberDecimal|numberSigned"
+        android:gravity="center"
+        android:text=""
+        android:layout_marginTop="30dp"
+        android:textColor="@color/textColor"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize"
+        />
+
+    <EditText
+        android:id="@+id/meterOutput"
+        android:layout_toRightOf="@+id/meter"
+        android:layout_alignBottom="@+id/meter"
+        android:inputType="numberDecimal|numberSigned"
+        android:gravity="center"
+        android:text=""
+        android:layout_marginLeft="30dp"
+        android:layout_width="200dp"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:layout_height="wrap_content"
+         />
+
+    <!--Back button to go back to main screen -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_below="@+id/meter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:textColor="@color/textColor"
+        android:padding="10dp"
+        android:textSize="@dimen/textSize"
+        android:text="Back"
+        android:onClick="back"
+         />
+
+</RelativeLayout>

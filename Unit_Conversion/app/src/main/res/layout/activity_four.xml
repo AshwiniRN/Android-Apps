@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7BDE2"
+    tools:context=".FourthActivity">
+
+    <!--TextView showing title Inch to Centimeter-->
+    <TextView
+        android:id="@+id/inchLabel"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="40dp"
+        android:gravity="center"
+        android:text="Inch to Centimeter"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:layout_width="310dp"
+        android:layout_height= "50dp"/>
+
+    <!--EditText to input Inch-->
+    <EditText
+        android:id="@+id/inch"
+        android:layout_below="@+id/inchLabel"
+        android:layout_alignLeft="@+id/inchLabel"
+        android:layout_marginTop="30dp"
+        android:inputType="numberDecimal|numberSigned"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/inchOutput"
+        android:layout_toRightOf="@+id/inch"
+        android:layout_alignBottom="@+id/inch"
+        android:gravity="center"
+        android:text=""
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+
+    <!--TextView showing title Centimeter to Inch-->
+    <TextView
+        android:id="@+id/centimeterLabel"
+        android:layout_below="@+id/inch"
+        android:layout_alignLeft="@+id/inchLabel"
+        android:gravity="center"
+        android:text="Centimeter to Inch"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <!--EditText to input centimeter-->
+    <EditText
+        android:id="@+id/centimeter"
+        android:layout_below="@+id/centimeterLabel"
+        android:layout_alignLeft="@+id/centimeterLabel"
+        android:inputType="numberDecimal|numberSigned"
+        android:gravity="center"
+        android:text=""
+        android:layout_marginTop="30dp"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/centimeterOutput"
+        android:layout_toRightOf="@+id/centimeter"
+        android:layout_alignBottom="@+id/centimeter"
+        android:inputType="numberDecimal|numberSigned"
+        android:gravity="center"
+        android:text=""
+        android:layout_marginLeft="30dp"
+        android:textSize="@dimen/textSize"
+        android:layout_width="200dp"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+         />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_below="@+id/centimeter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:padding="10dp"
+        android:text="Back"
+        android:onClick="back"
+         />
+
+</RelativeLayout>

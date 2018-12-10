@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E8E8"
+    tools:context=".DeleteActivity">
+
+    <!--ScrollView is placed on relativeLayout-->
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        />
+    <!--Back button to go back to main screen-->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_below="@+id/scroll"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Back"
+        android:onClick="back"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:textColor="@color/textColor" />
+</RelativeLayout>

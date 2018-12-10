@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="5"
+    android:columnCount="1"
+    android:background="#FAD7A0"
+    tools:context=".ThirdActivity">
+
+    <!--text views for displaying directions -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:height="100dp"
+            android:text="Head south on Bynan Dr "
+            android:textSize="@dimen/textSize"
+            android:gravity="center"
+            android:background="#A2D9CE"
+            android:textColor="@color/textColor"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:height="100dp"
+            android:text="Turn right onto Golfside Rd"
+            android:textSize="@dimen/textSize"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:height="100dp"
+            android:text="Turn right onto Huron River Dr"
+            android:textSize="@dimen/textSize"
+            android:gravity="center"
+            android:background="#A2D9CE"
+            android:textColor="@color/textColor"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:height="100dp"
+            android:text="Turn right onto N Hewitt Rd"
+            android:textSize="@dimen/textSize"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:height="100dp"
+            android:text="Your destination is on left"
+            android:textSize="@dimen/textSize"
+            android:gravity="center"
+            android:background="#A2D9CE"
+            android:textColor="@color/textColor"
+            />
+
+        <!--Back button to go to main screen-->
+        <Button
+            android:layout_width="150dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="50dp"
+            android:height="100dp"
+            android:text="Back"
+            android:textSize="@dimen/textSize"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:onClick="back"
+            />
+    </LinearLayout>
+</GridLayout>

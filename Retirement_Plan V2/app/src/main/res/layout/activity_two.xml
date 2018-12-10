@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+
+    <!--TextView to display years and amount-->
+    <TextView
+        android:id="@+id/labelYears"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Years|Amount"
+        android:gravity="center"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+
+        />
+
+    <!--Scroll view -->
+    <ScrollView
+        android:padding="10dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="6"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        >
+
+        <TextView
+            android:id="@+id/outputFinalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/textSize"
+            android:textColor="@color/textColor"
+            />
+
+    </ScrollView>
+
+    <!--Back button to go back to main activity screen-->
+    <Button
+        android:id="@+id/btnBack"
+        android:padding="10dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Back"
+        android:textColor="@color/textColor"
+        android:onClick="back"
+        />
+
+</LinearLayout>

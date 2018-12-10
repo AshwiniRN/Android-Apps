@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AED6F1"
+    tools:context=".FourthActivity">
+
+
+    <!--TextView for Optional Expenses-->
+    <TextView
+        android:id="@+id/labelOptional"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="120dp"
+        android:padding="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Optional Expenses:"
+        android:textColor="@color/textColor"
+        android:gravity="center"
+        android:textSize="@dimen/textSize"
+        />
+
+    <!--checkbox for dorm-->
+    <CheckBox
+        android:id="@+id/cbDorm"
+        android:layout_below="@id/labelOptional"
+        android:layout_alignLeft="@id/labelOptional"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dormitory $1000"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+
+    <!--checkbox for dining-->
+    <CheckBox
+        android:id="@+id/cbDining"
+        android:layout_below="@id/cbDorm"
+        android:layout_alignLeft="@id/cbDorm"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dining $500"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+
+    <!--Button to go to next page-->
+    <Button
+        android:id="@+id/btnNextToFive"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:onClick="nextToFive"
+        />
+
+    <!--Button to go to previous page-->
+    <Button
+        android:id="@+id/btnBackToThree"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:onClick="backToThree"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCD1D1"
+    tools:context=".InsertActivity">
+
+
+    <TextView
+        android:id="@+id/labelName"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:text="Name"/>
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_toRightOf="@id/labelName"
+        android:layout_alignBottom="@id/labelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/labelPrice"
+        android:layout_below="@+id/labelName"
+        android:layout_alignLeft="@+id/labelName"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:text="Price" />
+
+    <EditText
+        android:id="@+id/inputPrice"
+        android:layout_toRightOf="@id/labelPrice"
+        android:layout_alignBottom="@id/labelPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:inputType="numberDecimal"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        />
+
+    <TextView
+        android:id="@+id/labelDate"
+        android:layout_below="@+id/labelPrice"
+        android:layout_alignLeft="@+id/labelPrice"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:text="Date"
+
+        />
+
+    <!--third EditText for user to enter Date of Birth-->
+    <EditText
+        android:id="@+id/inputDate"
+        android:layout_toRightOf="@id/labelDate"
+        android:layout_alignBottom="@+id/labelDate"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:inputType="text"
+        android:hint="MM/DD/YYYY"
+        />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_below="@+id/labelDate"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:text="Submit"
+        android:onClick="add"
+        />
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_below="@+id/buttonAdd"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:text="Back"
+        android:onClick="back" />
+</RelativeLayout>
+

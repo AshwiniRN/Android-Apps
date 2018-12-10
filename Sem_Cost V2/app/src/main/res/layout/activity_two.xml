@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AED6F1"
+    tools:context=".SecondActivity">
+
+    <!--TextView for Number of Credits-->
+    <TextView
+        android:id="@+id/labelCredit"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="40dp"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Credits:"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+
+    <!--EditText to input Number of Credits-->
+    <EditText
+        android:id="@+id/inputCredit"
+        android:layout_toRightOf="@id/labelCredit"
+        android:layout_alignBottom="@id/labelCredit"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="0"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+    <!--Button to go to next page-->
+    <Button
+        android:id="@+id/btnNextToThree"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:onClick="nextToThree"
+        />
+
+    <!--Button to go to previous page-->
+    <Button
+        android:id="@+id/buttonBackCredits"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:onClick="backToMain"
+        />
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A3E4D7"
+    tools:context=".MainActivity">
+
+    <!--EditText for the user to enter the message-->
+    <EditText
+        android:id="@+id/msg"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:inputType="text|textMultiLine"
+        android:gravity="center"
+        android:hint="Enter real numbers"
+        android:textSize="@dimen/textSize"
+        android:maxLength="200"
+        android:textColor="@color/textColor"
+        />
+
+    <!--Button to perform Encryption-->
+    <Button
+        android:id="@+id/btnEncrypt"
+        android:layout_below="@+id/msg"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Encrypt"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:onClick="encrypt"
+        />
+
+    <!--Button to perform Decryption-->
+    <Button
+        android:id="@+id/btnDecrypt"
+        android:layout_toRightOf="@+id/btnEncrypt"
+        android:layout_alignBottom="@+id/btnEncrypt"
+        android:layout_marginLeft="20dp"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Decrypt"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:onClick="decrypt"
+        />
+
+    <!--This button for setting key value-->
+    <Button
+        android:id="@+id/key"
+        android:layout_toRightOf="@+id/btnDecrypt"
+        android:layout_alignBottom="@+id/btnDecrypt"
+        android:layout_marginLeft="20dp"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Key"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:onClick="key"
+        />
+
+</RelativeLayout>

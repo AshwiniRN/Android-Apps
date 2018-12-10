@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E8E8"
+    tools:context=".InsertActivity">
+
+    <!--Two TextViews and EditText for account and password-->
+    <TextView
+        android:id="@+id/labelAccount"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:background="#A3E4D7"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColor="@color/textColor"
+        android:text="Account"/>
+
+    <EditText
+        android:id="@+id/inputAccount"
+        android:layout_toRightOf="@id/labelAccount"
+        android:layout_alignBottom="@id/labelAccount"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="25dp"
+        android:background="#F9E79F"
+        android:textColor="@color/textColor"
+        android:inputType="text"/>
+    <TextView
+        android:id="@+id/labelPassword"
+        android:layout_below="@+id/labelAccount"
+        android:layout_alignLeft="@+id/labelAccount"
+        android:layout_marginTop="20dp"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:background="#A3E4D7"
+        android:textColor="@color/textColor"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_toRightOf="@id/labelPassword"
+        android:layout_alignBottom="@id/labelPassword"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:background="#F9E79F"
+        android:textColor="@color/textColor"
+        android:inputType="text"
+        />
+
+    <!--submit to add a item to the list-->
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_below="@+id/labelPassword"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColor="@color/textColor"
+        android:text="SUBMIT"
+        android:onClick="add"
+        />
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_below="@+id/buttonAdd"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColor="@color/textColor"
+        android:text="BACK"
+        android:onClick="back" />
+</RelativeLayout>
+

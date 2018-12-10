@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AED6F1"
+    tools:context=".MainActivity">
+
+    <!--Textview to display the app description-->
+    <TextView
+        android:id="@+id/labelTitle"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estimate a Semester Cost"
+        android:textSize="30sp"
+        android:textColor="@color/textColor"
+        />
+    <!--Next button to go to next page-->
+    <Button
+        android:id="@+id/btnNextPage"
+        android:layout_below="@id/labelTitle"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:onClick="nextPage"
+        />
+
+</RelativeLayout>

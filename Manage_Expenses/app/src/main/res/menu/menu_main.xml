@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ashwininadagoud.manage_expenses.MainActivity">
+    <item
+        android:id="@+id/add"
+        android:title="Add"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/delete"
+        android:title="Delete"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sortbyname"
+        android:title="Sort By Name"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sortbyPrice"
+        android:title="Sort By Price"
+        app:showAsAction="never" />
+</menu>

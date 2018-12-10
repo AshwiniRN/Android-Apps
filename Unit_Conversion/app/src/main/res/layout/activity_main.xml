@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBDEF0"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--TextViews that displays app description-->
+    <TextView
+        android:id="@+id/label1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:text="Distance Unit Conversions"
+        android:background="#F5B7B1"
+        android:textSize="@dimen/textSize"/>
+    <TextView
+        android:id="@+id/label2"
+        android:layout_below="@+id/label1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:text="Mile/Kilometer"
+        android:textSize="@dimen/textSize"/>
+    <TextView
+        android:id="@+id/label3"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/label2"
+        android:textColor="@color/textColor"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feet/Meter"
+        android:textSize="@dimen/textSize"/>
+    <TextView
+        android:id="@+id/label4"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/label3"
+        android:textColor="@color/textColor"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inch/Centimeter"
+        android:textSize="@dimen/textSize"/>
+
+</RelativeLayout>
+
+
+

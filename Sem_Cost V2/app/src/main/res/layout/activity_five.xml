@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AED6F1"
+    tools:context=".FifthActivity">
+
+
+    <!--TextView for Number of Credits-->
+    <TextView
+        android:id="@+id/labelCredits"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Credits:"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+
+    <!--TextView to display user input of credits-->
+    <TextView
+        android:id="@+id/outputCredits"
+        android:layout_toRightOf="@id/labelCredits"
+        android:layout_alignBottom="@id/labelCredits"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+
+    <!--TextViewfor Academic Status-->
+    <TextView
+        android:id="@+id/labelAcademicStatus"
+        android:layout_below="@id/labelCredits"
+        android:layout_alignLeft="@id/labelCredits"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Academic Status:"
+        android:gravity="center"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+
+    <!--RadioGroup to display AcademicStatus-->
+    <RadioGroup
+        android:id="@+id/radioAcademicStatus"
+        android:layout_below="@id/labelAcademicStatus"
+        android:layout_alignLeft="@id/labelAcademicStatus"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/undergraduate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UnderGraduate ($300 per Credit)"
+            android:textSize="@dimen/textSize"
+            android:textColor="@color/textColor"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/graduate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Graduate ($400 per Credit)"
+            android:textSize="@dimen/textSize"
+            android:textColor="@color/textColor"
+            />
+
+
+    </RadioGroup>
+
+    <!--TextView for Optional Expenses-->
+    <TextView
+        android:id="@+id/labelOptional"
+        android:layout_below="@id/radioAcademicStatus"
+        android:layout_alignLeft="@id/radioAcademicStatus"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="350dp"
+        android:gravity="center"
+        android:text="Optional Expenses:"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        />
+
+    <!--checkbox for dorm-->
+    <CheckBox
+        android:id="@+id/cb_dorm"
+        android:layout_below="@+id/labelOptional"
+        android:layout_toStartOf="@+id/outputCredits"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dormitory $1000"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+
+    <!--checkbox for dining-->
+    <CheckBox
+        android:id="@+id/cb_dining"
+        android:layout_below="@id/cb_dorm"
+        android:layout_alignLeft="@id/cb_dorm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dining $500"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+
+    <!--TextView to diplay lable total-->
+    <TextView
+        android:id="@+id/labelTotal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/cb_dining"
+        android:layout_alignLeft="@id/labelOptional"
+        android:padding="10dp"
+        android:layout_marginLeft="110dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total $:"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+
+    <!--TextView to display the final total cost-->
+    <TextView
+        android:id="@+id/outputTotal"
+        android:layout_toRightOf="@id/labelTotal"
+        android:layout_alignBottom="@id/labelTotal"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+
+    <!--Button to go back to previous page-->
+    <Button
+        android:id="@+id/btnBackToFour"
+        android:layout_below="@id/labelTotal"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:onClick="backToFour"
+        />
+
+</RelativeLayout>

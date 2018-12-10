@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AED6F1"
+    tools:context=".ThirdActivity">
+
+    <!--TextView label for Academic Status-->
+    <TextView
+        android:id="@+id/labelAcademicStatus"
+        android:padding="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="110dp"
+        android:layout_width="320dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Choose Academic Status:"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        />
+
+    <!--RadioGroup to choose AcademicStatus-->
+    <RadioGroup
+        android:id="@+id/radioAcademicStatus"
+        android:layout_below="@id/labelAcademicStatus"
+        android:layout_alignLeft="@id/labelAcademicStatus"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/undergraduate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UnderGraduate ($300 per Credit)"
+            android:textSize="@dimen/textSize"
+            android:textColor="@color/textColor"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/graduate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Graduate ($400 per Credit)"
+            android:textSize="@dimen/textSize"
+            android:textColor="@color/textColor"
+            />
+
+    </RadioGroup>
+
+    <!--Button to go to next page-->
+    <Button
+        android:id="@+id/btnNextToFour"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:onClick="nextToFour"
+        />
+
+    <!--Button to go to previous page-->
+    <Button
+        android:id="@+id/btnBackToTwo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/textColor"
+        android:onClick="backToTwo"
+        />
+
+</RelativeLayout>

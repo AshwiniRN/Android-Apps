@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCD1D1"
+    tools:context=".SortByPrice">
+
+
+    <TextView
+        android:id="@+id/priceOneLabel"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:text="Price from"/>
+
+    <EditText
+        android:id="@+id/inputPriceOne"
+        android:layout_toRightOf="@id/priceOneLabel"
+        android:layout_alignBottom="@id/priceOneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/priceTwoLabel"
+        android:layout_below="@id/priceOneLabel"
+        android:layout_alignLeft="@id/priceOneLabel"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:text="Price to"/>
+
+    <EditText
+        android:id="@+id/inputPriceTwo"
+        android:layout_toRightOf="@id/priceTwoLabel"
+        android:layout_alignBottom="@id/priceTwoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:inputType="text"/>
+
+
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_below="@+id/priceTwoLabel"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:onClick="add"
+        />
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_below="@+id/buttonAdd"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:onClick="back" />
+
+    <TextView
+        android:id="@+id/outputPrice"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/buttonBack"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        />
+</RelativeLayout>
+
